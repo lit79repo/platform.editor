@@ -1,0 +1,18 @@
+@import "../node_modules/bulma/css/bulma.min.css";
+
+section.hero.header{
+    -webkit-app-region: drag;
+}
+
+input{
+    -webkit-app-region: no-drag;
+}
+
+html, body, .app{
+    background: whitesmoke;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}

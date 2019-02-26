@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>79</title>
+</head>
+
+<body>
+    <div class="app">
+        <section class="hero is-dark header">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        79
+                    </h1>
+                    <h2 v-if="time !== null" class="subtitle">
+                        {{ time }}
+                    </h2>
+                    <br> <input v-model="Class" class="input is-rounded" type="text" placeholder="Введите Класс">
+                </div>
+            </div>
+        </section>
+        <div v-if="Class == null" class="classeslist">
+            <div class="content">
+                <ol v-for="C in data.classes" type="1">
+                    {{ Class }}
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../node_modules/vue/dist/vue.min.js"></script>
+<script src="index.js"></script>
+
+</html>

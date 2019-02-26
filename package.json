@@ -1,0 +1,21 @@
+{
+  "name": "lit79.platform.editor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lit79repo/platform.editor",
+  "scripts": {
+    "start": "electron index.js",
+    "dev": "nodemon -w index.js --exec 'npx electron index.js'",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "author": "Misha Marinenko <0x77dev@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.7.4",
+    "electron": "^4.0.5",
+    "eslint": "^5.14.1",
+    "nodemon": "^1.18.10",
+    "vue": "^2.6.7"
+  }
+}
